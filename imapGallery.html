@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Anime Template">
+    <meta name="keywords" content="Anime, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery</title>
+    <link rel="shortcut icon" href="images/logo.svg" type="image/svg+xml">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/imapGallery.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="index.html">
+                            <img src="images/Logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li class=""><a href="index.html">Homepage</a></li>
+                                <li class=""><a href="imapAbout.html">About Page</a></li>
+                                <li class=""><a href="imapGames.html">Games <span class="fa fa-angle-down"></span></a>
+                                    <ul class="dropdown">
+                                        <li><a href="imapRPG.html">RPG</a></li>
+                                        <li><a href="imapPUZZLE.html">Puzzle</a></li>
+                                        <li><a href="imapSHOOTER.html">Shooter</a></li>
+                                        <li><a href="imapMOBA.html">MOBA</a></li>
+                                        <li><a href="imapSIMULATION.html">Simulation</a></li>
+                                    </ul>
+                                </li>
+                                <li class="active"><a href="imapGallery.html">Gallery</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+     <!-- Breadcrumb Begin -->
+     <div class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__links">
+                        <a href="index.html">Home</a>
+                        <span>Gallery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <section class="gallery">
+        <div class="app">
+
+            <div class="cardList">
+                <button class="cardList__btn btn btn--left" style="opacity: 1; pointer-events: all;">
+                    <div class="icon">
+                        <svg>
+                            <use xlink:href="#arrow-left"></use>
+                        </svg>
+                    </div>
+                </button>
+        
+                <div class="cards__wrapper">
+                    <div class="card previous--card" style="--card-translateY-offset: 0%; --current-card-rotation-offset: 0; z-index: 50;">
+                        <div class="card__image">
+                            <img src="images/h1.jpg" alt="">
+                        </div>
+                    </div>
+        
+                    <div class="card current--card" style="--card-translateY-offset: 0%; z-index: 30; --current-card-rotation-offset: 0;">
+                        <div class="card__image">
+                            <img src="images/h2.jpg" alt="">
+                        </div>
+                    </div>
+        
+                    <div class="card next--card" style="--card-translateY-offset: 0%; z-index: 20; --current-card-rotation-offset: 0;">
+                        <div class="card__image">
+                            <img src="images/h3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+        
+                <button class="cardList__btn btn btn--right" style="opacity: 1; pointer-events: all;">
+                    <div class="icon">
+                        <svg>
+                            <use xlink:href="#arrow-right"></use>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        
+            <div class="infoList">
+                <div class="info__wrapper">
+                    <div class="info previous--info" style="transform: translate3d(0px, 0px, 32px);">
+                        <h1 class="text name" style="opacity: 0; transform: translate(0px, -120px);">JETT</h1>
+                        <h4 class="text location" style="opacity: 0; transform: translate(0px, -120px);">Valorant</h4>
+                        <p class="text description" style="opacity: 0; transform: translate(0px, -120px);">Dash All The Way </p>
+                    </div>
+        
+                    <div class="info current--info" style="transform: translate3d(0px, 0px, 32px);">
+                        <h1 class="text name" style="transform: translate(0px, 0px); opacity: 1;">KATRINA</h1>
+                        <h4 class="text location" style="transform: translate(0px, 0px); opacity: 1;">League of Legends</h4>
+                        <p class="text description" style="transform: translate(0px, 0px); opacity: 1;">Adventure is never far away</p>
+                    </div>
+        
+                    <div class="info next--info" style="transform: translate3d(0px, 0px, 32px);">
+                        <h1 class="text name" style="transform: translate(0px, -120px); opacity: 0;">CANDACE</h1>
+                        <h4 class="text location" style="transform: translate(0px, -120px); opacity: 0;">Genshin Impact</h4>
+                        <p class="text description" style="transform: translate(0px, -120px); opacity: 0;">Let your dreams come true</p>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="app__bg">
+                <div class="app__bg__image previous--image" style="z-index: -2;">
+                    <img src="images/image3.jpg" alt="">
+                </div>
+                <div class="app__bg__image current--image" style="z-index: -1;">
+                    <img src="images/image4.jpg" alt="">
+                </div>
+                <div class="app__bg__image next--image" style="z-index: -2;">
+                    <img src="images/image1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="loading__wrapper" style="pointer-events: none; opacity: 0;">
+            <div class="loader--text">Loading...</div>
+            <div class="loader">
+                <span style="background-color: rgb(0, 255, 0); transform: translate(0px, 0px);"></span>
+            </div>
+        </div>
+        
+        
+        <svg class="icons" style="display: none;">
+            <symbol id="arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <polyline points="328 112 184 256 328 400" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"></polyline>
+            </symbol>
+            <symbol id="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <polyline points="184 112 328 256 184 400" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"></polyline>
+            </symbol>
+        </svg>
+
+            <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+        
+          <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+        
+        <script id="rendered-js">
+        console.clear();
+        
+        const { gsap, imagesLoaded } = window;
+        
+        const buttons = {
+          prev: document.querySelector(".btn--left"),
+          next: document.querySelector(".btn--right") };
+        
+        const cardsContainerEl = document.querySelector(".cards__wrapper");
+        const appBgContainerEl = document.querySelector(".app__bg");
+        
+        const cardInfosContainerEl = document.querySelector(".info__wrapper");
+        
+        buttons.next.addEventListener("click", () => swapCards("right"));
+        
+        buttons.prev.addEventListener("click", () => swapCards("left"));
+        
+        function swapCards(direction) {
+          const currentCardEl = cardsContainerEl.querySelector(".current--card");
+          const previousCardEl = cardsContainerEl.querySelector(".previous--card");
+          const nextCardEl = cardsContainerEl.querySelector(".next--card");
+        
+          const currentBgImageEl = appBgContainerEl.querySelector(".current--image");
+          const previousBgImageEl = appBgContainerEl.querySelector(".previous--image");
+          const nextBgImageEl = appBgContainerEl.querySelector(".next--image");
+        
+          changeInfo(direction);
+          swapCardsClass();
+        
+          removeCardEvents(currentCardEl);
+        
+          function swapCardsClass() {
+            currentCardEl.classList.remove("current--card");
+            previousCardEl.classList.remove("previous--card");
+            nextCardEl.classList.remove("next--card");
+        
+            currentBgImageEl.classList.remove("current--image");
+            previousBgImageEl.classList.remove("previous--image");
+            nextBgImageEl.classList.remove("next--image");
+        
+            currentCardEl.style.zIndex = "50";
+            currentBgImageEl.style.zIndex = "-2";
+        
+            if (direction === "right") {
+              previousCardEl.style.zIndex = "20";
+              nextCardEl.style.zIndex = "30";
+        
+              nextBgImageEl.style.zIndex = "-1";
+        
+              currentCardEl.classList.add("previous--card");
+              previousCardEl.classList.add("next--card");
+              nextCardEl.classList.add("current--card");
+        
+              currentBgImageEl.classList.add("previous--image");
+              previousBgImageEl.classList.add("next--image");
+              nextBgImageEl.classList.add("current--image");
+            } else if (direction === "left") {
+              previousCardEl.style.zIndex = "30";
+              nextCardEl.style.zIndex = "20";
+        
+              previousBgImageEl.style.zIndex = "-1";
+        
+              currentCardEl.classList.add("next--card");
+              previousCardEl.classList.add("current--card");
+              nextCardEl.classList.add("previous--card");
+        
+              currentBgImageEl.classList.add("next--image");
+              previousBgImageEl.classList.add("current--image");
+              nextBgImageEl.classList.add("previous--image");
+            }
+          }
+        }
+        
+        function changeInfo(direction) {
+          let currentInfoEl = cardInfosContainerEl.querySelector(".current--info");
+          let previousInfoEl = cardInfosContainerEl.querySelector(".previous--info");
+          let nextInfoEl = cardInfosContainerEl.querySelector(".next--info");
+        
+          gsap.timeline().
+          to([buttons.prev, buttons.next], {
+            duration: 0.2,
+            opacity: 0.5,
+            pointerEvents: "none" }).
+        
+          to(
+          currentInfoEl.querySelectorAll(".text"),
+          {
+            duration: 0.4,
+            stagger: 0.1,
+            translateY: "-120px",
+            opacity: 0 },
+        
+          "-=").
+        
+          call(() => {
+            swapInfosClass(direction);
+          }).
+          call(() => initCardEvents()).
+          fromTo(
+          direction === "right" ?
+          nextInfoEl.querySelectorAll(".text") :
+          previousInfoEl.querySelectorAll(".text"),
+          {
+            opacity: 0,
+            translateY: "40px" },
+        
+          {
+            duration: 0.4,
+            stagger: 0.1,
+            translateY: "0px",
+            opacity: 1 }).
+        
+        
+          to([buttons.prev, buttons.next], {
+            duration: 0.2,
+            opacity: 1,
+            pointerEvents: "all" });
+        
+        
+          function swapInfosClass() {
+            currentInfoEl.classList.remove("current--info");
+            previousInfoEl.classList.remove("previous--info");
+            nextInfoEl.classList.remove("next--info");
+        
+            if (direction === "right") {
+              currentInfoEl.classList.add("previous--info");
+              nextInfoEl.classList.add("current--info");
+              previousInfoEl.classList.add("next--info");
+            } else if (direction === "left") {
+              currentInfoEl.classList.add("next--info");
+              nextInfoEl.classList.add("previous--info");
+              previousInfoEl.classList.add("current--info");
+            }
+          }
+        }
+        
+        function updateCard(e) {
+          const card = e.currentTarget;
+          const box = card.getBoundingClientRect();
+          const centerPosition = {
+            x: box.left + box.width / 2,
+            y: box.top + box.height / 2 };
+        
+          let angle = Math.atan2(e.pageX - centerPosition.x, 0) * (35 / Math.PI);
+          gsap.set(card, {
+            "--current-card-rotation-offset": `${angle}deg` });
+        
+          const currentInfoEl = cardInfosContainerEl.querySelector(".current--info");
+          gsap.set(currentInfoEl, {
+            rotateY: `${angle}deg` });
+        
+        }
+        
+        function resetCardTransforms(e) {
+          const card = e.currentTarget;
+          const currentInfoEl = cardInfosContainerEl.querySelector(".current--info");
+          gsap.set(card, {
+            "--current-card-rotation-offset": 0 });
+        
+          gsap.set(currentInfoEl, {
+            rotateY: 0 });
+        
+        }
+        
+        function initCardEvents() {
+          const currentCardEl = cardsContainerEl.querySelector(".current--card");
+          currentCardEl.addEventListener("pointermove", updateCard);
+          currentCardEl.addEventListener("pointerout", e => {
+            resetCardTransforms(e);
+          });
+        }
+        
+        initCardEvents();
+        
+        function removeCardEvents(card) {
+          card.removeEventListener("pointermove", updateCard);
+        }
+        
+        function init() {
+        
+          let tl = gsap.timeline();
+        
+          tl.to(cardsContainerEl.children, {
+            delay: 0.15,
+            duration: 0.5,
+            stagger: {
+              ease: "power4.inOut",
+              from: "right",
+              amount: 0.1 },
+        
+            "--card-translateY-offset": "0%" }).
+        
+          to(cardInfosContainerEl.querySelector(".current--info").querySelectorAll(".text"), {
+            delay: 0.5,
+            duration: 0.4,
+            stagger: 0.1,
+            opacity: 1,
+            translateY: 0 }).
+        
+          to(
+          [buttons.prev, buttons.next],
+          {
+            duration: 0.4,
+            opacity: 1,
+            pointerEvents: "all" },
+        
+          "-=0.4");
+        
+        }
+        
+        const waitForImages = () => {
+          const images = [...document.querySelectorAll("img")];
+          const totalImages = images.length;
+          let loadedImages = 0;
+          const loaderEl = document.querySelector(".loader span");
+        
+          gsap.set(cardsContainerEl.children, {
+            "--card-translateY-offset": "100vh" });
+        
+          gsap.set(cardInfosContainerEl.querySelector(".current--info").querySelectorAll(".text"), {
+            translateY: "40px",
+            opacity: 0 });
+        
+          gsap.set([buttons.prev, buttons.next], {
+            pointerEvents: "none",
+            opacity: "0" });
+        
+        
+          images.forEach(image => {
+            imagesLoaded(image, instance => {
+              if (instance.isComplete) {
+                loadedImages++;
+                let loadProgress = loadedImages / totalImages;
+        
+                gsap.to(loaderEl, {
+                  duration: 1,
+                  scaleX: loadProgress,
+                  backgroundColor: `hsl(${loadProgress * 120}, 100%, 50%` });
+        
+        
+                if (totalImages == loadedImages) {
+                  gsap.timeline().
+                  to(".loading__wrapper", {
+                    duration: 0.8,
+                    opacity: 0,
+                    pointerEvents: "none" }).
+        
+                  call(() => init());
+                }
+              }
+            });
+          });
+        };
+        
+        waitForImages();
+        //# sourceURL=pen.js
+            </script>
+        
+          
+          <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js"></script>
+        
+    </section>
+
+      <!-- Blog Section Begin -->
+      <section class="blog spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="blog__item set-bg" data-setbg="images/a1.jpg" style="background-image: url(images/a1.jpg);">
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item small__item set-bg" data-setbg="images/a2.jpg" style="background-image: url(images/a2.jpg);">
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item small__item set-bg" data-setbg="images/a3.jpg" style="background-image: url(images/a3.jpg);">
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="blog__item set-bg" data-setbg="images/a4.jpg" style="background-image: url(images/a4.jpg);">
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item small__item set-bg" data-setbg="images/a5.jpg" style="background-image: url(images/a5.jpg);">
+                               
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item small__item set-bg" data-setbg="images/a6.jpg" style="background-image: url(images/a6.jpg);">
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="blog__item last__item set-bg" data-setbg="images/hero-banner.png" style="background-image: url(images/hero-banner.png);">
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item small__item set-bg" data-setbg="images/a7.jpg" style="background-image: url(images/a7.jpg);">
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item small__item set-bg" data-setbg="images/a8.jpg" style="background-image: url(images/a8.jpg);">
+                               
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="blog__item set-bg" data-setbg="images/b1.jpg" style="background-image: url(images/b1.jpg);">
+                               
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item small__item set-bg" data-setbg="images/b2.jpg" style="background-image: url(images/b2.jpg);">
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item small__item set-bg" data-setbg="images/a9.jpg" style="background-image: url(images/a9.jpg);">
+                               
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="blog__item set-bg" data-setbg="images/b4.jpg" style="background-image: url(images/b4.jpg);">
+                               
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+      
+
+         <!-- footer Section Begin -->
+      <footer class="footer">
+        <div class="page-up">
+            <a href="#" id="scrollToTopButton"><span class="fa fa-angle-up" style="font-size:36px; align-content: center;"></span></a>
+        </div>
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="https://www.twitter.com/">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="imapAbout.html">About</a></li>
+        </ul>
+        <p>&copy;2023 IMAP PUSAY | All Rights Reserved</p>
+      </footer>
+      
+      <!-- footer Section End -->
+
+    <!-- Js Plugins -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
